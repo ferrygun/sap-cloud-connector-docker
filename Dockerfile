@@ -35,7 +35,7 @@ WORKDIR /tmp/sapdownloads
 RUN wget --no-check-certificate --no-cookies --header "Cookie: eula_3_1_agreed=tools.hana.ondemand.com/developer-license-3_1.txt; path=/;" -S https://tools.hana.ondemand.com/additional/sapcc-2.11.3-linux-x64.zip && \
     wget --no-check-certificate --no-cookies --header "Cookie: eula_3_1_agreed=tools.hana.ondemand.com/developer-license-3_1.txt; path=/;" -S https://tools.hana.ondemand.com/additional/sapjvm-8.1.050-linux-x64.rpm && \
     unzip sapcc-2.11.3-linux-x64.zip && \
-    rpm -i sapjvm-8.1.047-linux-x64.rpm && rpm -i com.sap.scc-ui-2.11.3-6.x86_64.rpm
+    rpm -i sapjvm-8.1.050-linux-x64.rpm && rpm -i com.sap.scc-ui-2.11.3-6.x86_64.rpm
 
 # HINT:
 # In case the downloads fail you might have to update the wget urls.
